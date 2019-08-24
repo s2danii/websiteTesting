@@ -27,7 +27,7 @@ body {
 /*header starts here*/
 
 header.homeHeader {
-	min-height: 100vh;
+	height: 100vh;
 	background: url(Images/header2a.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -42,7 +42,6 @@ nav {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	
 }
 
 a:visited {
@@ -52,8 +51,6 @@ a:visited {
 .currentPage {
 	border-bottom: 1px solid black;
 }
-
-
 
 .navContainer {
 	display: flex;
@@ -70,8 +67,9 @@ a:visited {
 
 .menu li {
 	list-style: none;
-	padding: 10px 40px;
+	padding: 10px 50px;
 	position: relative;
+	text-align: center;
 }
 
 a {
@@ -97,6 +95,10 @@ h1 {
 	display: none;
 	background: rgba(245,245,245,0.8);
 	
+}
+
+.portfolioMenu li {
+	padding: 10px 20px;
 }
 
 .menu li:hover .portfolioMenu {
@@ -177,7 +179,6 @@ h1 {
 	float: left;
 	margin: 50px calc((100% - 900px)/6);
 	position: relative;
-	/*border: 2px solid tomato;*/
 
 }
 
@@ -279,5 +280,6 @@ footer .wrapper {
 
 	.menu {
 		display: flex;
+		justify-content: center;
 	}
 }
